@@ -5,13 +5,14 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 import { AppRoutingModule } from './app-routing.module';
-import { MatModule } from './mat.module'
+import { MatModule } from '../modules/mat.module'
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { ContentComponent } from './content/content.component';
 import { ContentTopComponent } from './content/content-top/content-top.component';
 import { ContentBottomComponent } from './content/content-bottom/content-bottom.component';
+import { PipesComponent } from './content/pipes/pipes.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { ContentBottomComponent } from './content/content-bottom/content-bottom.
     ContentComponent,
     ContentTopComponent,
     ContentBottomComponent,
+    PipesComponent,
   ],
   imports: [
     BrowserModule,
