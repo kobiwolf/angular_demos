@@ -1,9 +1,9 @@
 <p>Form:</p>
-<form action="" class='form'>
+<form action="" class='form' (ngSubmit)='onSubmit(myForm)' #myForm='ngForm'>
     <div class="flex formFildes">
         <mat-form-field appearance="fill">
             <mat-label>name</mat-label>
-            <input matInput name='name' type="text" id="nameInput" ngModel>
+            <input matInput name='name' type="text" id="nameInput" ngModel required>
         </mat-form-field>
         <mat-form-field>
             <mat-label>age</mat-label>
@@ -12,6 +12,10 @@
                 <mat-option value='2'>2</mat-option>
             </mat-select>
         </mat-form-field>
-        <button mat-button color='primary'>Submit</button>
+        <mat-radio-group aria-label="Select an option" name='gender' ngModel color='primary'>
+            <mat-radio-button value="male">Male</mat-radio-button>
+            <mat-radio-button value="female">Female</mat-radio-button>
+        </mat-radio-group>
+        <button mat-button color='primary' type="submit">Submit</button>
     </div>
 </form>

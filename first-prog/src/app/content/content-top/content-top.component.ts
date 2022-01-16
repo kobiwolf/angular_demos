@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-content-top',
@@ -12,7 +13,8 @@ export class ContentTopComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  onSubmit() {
+  onSubmit(a: NgForm) {
+    console.log(a.value);
 
   }
 

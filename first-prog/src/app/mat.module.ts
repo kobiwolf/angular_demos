@@ -5,6 +5,7 @@ import { MatInputModule } from '@angular/material/Input';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatSelectModule } from '@angular/material/select';
 import { MatButtonModule } from '@angular/material/button';
+import { MatRadioModule } from '@angular/material/radio';
 @NgModule({
     exports: [
         MatOptionModule,
@@ -12,7 +13,8 @@ import { MatButtonModule } from '@angular/material/button';
         MatFormFieldModule,
         MatInputModule,
         MatToolbarModule,
-        MatButtonModule
+        MatButtonModule,
+        MatRadioModule
     ],
 })
 export class MatModule { }
