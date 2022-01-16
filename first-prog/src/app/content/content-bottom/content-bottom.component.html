@@ -1,1 +1,18 @@
-<p>content-bottom works!</p>
+<form action="" (ngSubmit)='onSubmit(myForm)' #myForm='ngForm' class='form'>
+    <mat-form-field>
+        <mat-label>E-mail</mat-label>
+        <input matInput ngModel name="email" required email>
+    </mat-form-field>
+    <mat-form-field>
+        <mat-label>Subs</mat-label>
+        <mat-select [ngModel]="'pro'" name='subs' color='primary'>
+            <mat-option *ngFor=" let option of options" value='option'>{{option}}
+            </mat-option>
+        </mat-select>
+    </mat-form-field>
+    <mat-form-field>
+        <mat-label>Password</mat-label>
+        <input matInput type='password' ngModel name="password" required>
+    </mat-form-field>
+    <button mat-button [disabled]="!myForm.valid">Submit</button>
+</form>
