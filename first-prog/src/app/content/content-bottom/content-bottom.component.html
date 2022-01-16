@@ -6,7 +6,7 @@
     <mat-form-field>
         <mat-label>Subs</mat-label>
         <mat-select [ngModel]="'pro'" name='subs' color='primary'>
-            <mat-option *ngFor=" let option of options" value='option'>{{option}}
+            <mat-option *ngFor=" let option of options" [value]='option'>{{option}}
             </mat-option>
         </mat-select>
     </mat-form-field>
