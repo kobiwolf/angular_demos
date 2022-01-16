@@ -1,7 +1,17 @@
-<p>content-top works!</p>
-<form action="">
-    <mat-form-field appearance="fill">
-        <mat-label>Input</mat-label>
-        <input matInput>
-    </mat-form-field>
+<p>Form:</p>
+<form action="" class='form'>
+    <div class="flex formFildes">
+        <mat-form-field appearance="fill">
+            <mat-label>name</mat-label>
+            <input matInput name='name' type="text" id="nameInput" ngModel>
+        </mat-form-field>
+        <mat-form-field>
+            <mat-label>age</mat-label>
+            <mat-select name='age' ngModel>
+                <mat-option value='1'>1</mat-option>
+                <mat-option value='2'>2</mat-option>
+            </mat-select>
+        </mat-form-field>
+        <button mat-button color='primary'>Submit</button>
+    </div>
 </form>

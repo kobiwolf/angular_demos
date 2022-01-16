@@ -12,4 +12,8 @@ export class ContentTopComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  onSubmit() {
+
+  }
+
 }
