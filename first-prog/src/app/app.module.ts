@@ -14,6 +14,7 @@ import { ContentTopComponent } from './content/content-top/content-top.component
 import { ContentBottomComponent } from './content/content-bottom/content-bottom.component';
 import { PipesComponent } from './content/pipes/pipes.component';
 import { ReversePipe } from './content/pipes/reverse.pipe';
+import { InfoComponent } from './info/info.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { ReversePipe } from './content/pipes/reverse.pipe';
     ContentBottomComponent,
     PipesComponent,
     ReversePipe,
+    InfoComponent,
   ],
   imports: [
     BrowserModule,

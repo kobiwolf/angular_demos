@@ -6,6 +6,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatSelectModule } from '@angular/material/select';
 import { MatButtonModule } from '@angular/material/button';
 import { MatRadioModule } from '@angular/material/radio';
+import { MatTabsModule } from '@angular/material/tabs'
 @NgModule({
     exports: [
         MatOptionModule,
@@ -14,7 +15,8 @@ import { MatRadioModule } from '@angular/material/radio';
         MatInputModule,
         MatToolbarModule,
         MatButtonModule,
-        MatRadioModule
+        MatRadioModule,
+        MatTabsModule
     ],
 })
 export class MatModule { }
