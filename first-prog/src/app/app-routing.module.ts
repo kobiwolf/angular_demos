@@ -1,14 +1,9 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { AppComponent } from './app.component';
 import { ContentComponent } from './content/content.component';
 import { InfoComponent } from './info/info.component';
 
 const routes: Routes = [
-  // {
-  //   path: '',
-  //   component: AppComponent,
-  // },
   {
     path: 'content',
     component: ContentComponent
@@ -17,7 +12,6 @@ const routes: Routes = [
     path: 'info',
     component: InfoComponent,
   }
-
 ];
 
 @NgModule({
